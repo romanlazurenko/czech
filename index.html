@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bistro №1</title>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header-text">
+          <img src="assets/header-text.svg" alt="Bistro #1" />
+        </div>
+        <div class="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    <div class="header__nav" aria-hidden="true">
+      <nav class="nav" aria-label="Hlavní navigace">
+        <ul class="nav__list">
+          <li class="nav__list_item">
+            <a class="nav__link" href="/quattro-gusti.html">Quattro Gusti</a>
+          </li>
+          <li class="nav__list_item">
+            <a class="nav__link" href="/korunni-bistro.html">Korunni Bistro</a>
+          </li>
+          <li class="nav__list_item">
+            <a class="nav__link" href="/papa-s-pepper.html">Papa`s Pepper</a>
+          </li>
+          <li class="nav__list_item">
+            <a class="nav__link" href="/pizza-kebab.html">Pizza – Kebab</a>
+          </li>
+        </ul>
+       <div>
+        <div class="burger-phone">
+            <li class="contact__list_item">
+              <svg
+                class="contact__list_item_icon"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.0693 27.5105C18.1493 27.4398 12.7079 26.6878 7.00925 20.9905C1.31192 15.2918 0.561252 9.8518 0.489252 7.93047C0.382585 5.00247 2.62525 2.15847 5.21592 1.0478C5.52789 0.913088 5.86952 0.8618 6.20729 0.898966C6.54506 0.936133 6.86737 1.06048 7.14259 1.2598C9.27592 2.81447 10.7479 5.16647 12.0119 7.0158C12.29 7.42211 12.4089 7.91653 12.346 8.40486C12.283 8.89319 12.0426 9.3413 11.6706 9.6638L9.06925 11.5958C8.94357 11.6866 8.85511 11.8198 8.82029 11.9709C8.78547 12.122 8.80665 12.2805 8.87992 12.4171C9.46925 13.4878 10.5173 15.0825 11.7173 16.2825C12.9173 17.4825 14.5879 18.5998 15.7333 19.2558C15.8769 19.3364 16.0459 19.3589 16.2056 19.3188C16.3653 19.2786 16.5035 19.1788 16.5919 19.0398L18.2853 16.4625C18.5966 16.0489 19.0558 15.7719 19.5668 15.6894C20.0778 15.6069 20.6009 15.7253 21.0266 16.0198C22.9026 17.3185 25.0919 18.7651 26.6946 20.8171C26.9101 21.0943 27.0472 21.4243 27.0915 21.7727C27.1358 22.121 27.0858 22.4748 26.9466 22.7971C25.8306 25.4011 23.0066 27.6185 20.0693 27.5105Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <a href="tel:+420777123456" class="contact__list_item_text"
+                >777 765 570</a
+              >
+            </li>
+          </div>
+          <div class="footer__content">
+            <div class="footer__policy">
+              <a href="#"
+                >Zásady ochrany<br />
+                osobních údajů</a
+              >
+            </div>
+          </div>
+       </div>
+      </nav>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__header">
+              <h1 class="hero__title">
+                Chutně a rychle — každý den,<br />v jakémkoliv formátu
+              </h1>
+            </div>
+            <div class="hero__list">
+              <ul class="hero__list_items">
+                <li class="hero__list_item">
+                  <img src="assets/mob/hero1.png" alt="hero-1" />
+                  <a href="/quattro-gusti.html" class="hero__list_item_text">Quattro Gusti</a>
+                </li>
+                <li class="hero__list_item">
+                  <img src="assets/mob/hero2.jpg" alt="hero-2" />
+                  <a href="/korunni-bistro.html" class="hero__list_item_text">Korunni Bistro</a>
+                </li>
+                <li class="hero__list_item">
+                  <img src="assets/mob/hero3.jpg" alt="hero-3" />
+                  <a href="/papa-s-pepper.html" class="hero__list_item_text">Papa`s Pepper</a>
+                </li>
+                <li class="hero__list_item">
+                  <img src="assets/mob/hero4.png" alt="hero-4" />
+                  <a href="/pizza-kebab.html" class="hero__list_item_text">Pizza – Kebab</a>
+                </li>
+              </ul>
+              <img src="assets/fork.svg" alt="fork" class="hero__fork" />
+            </div>
+            <div class="hero__description">
+              <p class="hero__description_text">
+                Čtyři podniky — jeden princip: žádné kompromisy v chuti ani
+                rychlosti. Máte chuť na šťavnatou pizzu, pikantní kebab nebo
+                vydatný oběd v klasickém bistru? Vaříme, jako bychom to dělali
+                pro sebe — rychle, poctivě a z čerstvých surovin. Stavte se na
+                rychlé sousto, vezměte si jídlo s sebou nebo si dejte pauzu —
+                vždy u nás najdete něco podle nálady.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__content">
+            <h2 class="contact__title">Kontakty</h2>
+          </div>
+          <div class="contact__list">
+            <ul class="contact__list_items">
+              <div class="phone">
+                <li class="contact__list_item">
+                  <img
+                    src="assets/phone-icon.svg"
+                    alt="phone"
+                    class="contact__list_item_icon"
+                  />
+                  <a href="tel:+420777123456" class="contact__list_item_text"
+                    >777 765 570</a
+                  >
+                </li>
+              </div>
+              <div class="adress">
+                <li class="contact__list_item">
+                  <img
+                    src="assets/map-icon.svg"
+                    alt="map"
+                    class="contact__list_item_icon"
+                  />
+                  <a href="https://maps.app.goo.gl/GYqR827i5GwVnPWy8" class="contact__list_item_text"
+                    >17, Francouzská 736, Vinohrady, 120 00 Praha 2</a
+                  >
+                </li>
+                <li class="contact__list_item">
+                  <img
+                    src="assets/map-icon.svg"
+                    alt="map"
+                    class="contact__list_item_icon"
+                  />
+                  <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" class="contact__list_item_text"
+                    >Korunní 1011/130 00, 130 00 Vinohrady</a
+                  >
+                </li>
+                <li class="contact__list_item">
+                  <img
+                    src="assets/map-icon.svg"
+                    alt="map"
+                    class="contact__list_item_icon"
+                  />
+                  <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" class="contact__list_item_text"
+                    >Korunní 1011/103, 101 00 Vinohrady</a
+                  >
+                </li>
+                <li class="contact__list_item">
+                  <img
+                    src="assets/map-icon.svg"
+                    alt="map"
+                    class="contact__list_item_icon"
+                  />
+                  <a href="https://maps.app.goo.gl/QRXnoL947kqfEbfD8" class="contact__list_item_text"
+                    >Újezd 454/46, 118 00 Malá Strana</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5120.234756273868!2d14.40438!3d50.0840892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e33f151b8f%3A0xe154becf9d727a5d!2sPizza%20-%20Kebab%20-%20Stromboli%20-%20Salat%20-%20Bistro!5e0!3m2!1scs!2scz!4v1749151746996!5m2!1scs!2scz"
+              width="100%"
+              height="345"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__policy">
+            <a href="#"
+              >Zásady ochrany<br />
+              osobních údajů</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
