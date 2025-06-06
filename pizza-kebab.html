@@ -21,6 +21,27 @@
             ><img src="assets/header-text.svg" alt="Bistro #1"
           /></a>
         </div>
+        <nav class="nav nav--desktop" aria-label="Hlavní navigace">
+          <ul class="nav__list">
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link nav__link--logo" href="/"
+                ><img src="assets/header-text.svg" alt="fork" class="header__fork"
+              /></a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/papa-s-pepper">Papa`s Pepper</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
+            </li>
+          </ul>
+        </nav>
         <div class="menu-btn">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -65,7 +86,7 @@
                 />
               </svg>
               <a href="tel:+420777765570" class="contact__list_item_text"
-                >777 765 570</a
+                >777 765 570</a
               >
             </li>
           </div>
@@ -81,7 +102,7 @@
       </nav>
     </div>
     <main>
-      <section class="hero hero_quattro">
+      <section class="hero hero_pizza">
         <div class="container">
           <div class="hero__content">
             <div class="hero__header">
@@ -102,18 +123,20 @@
                 </li>
                 <li class="hero__list_item menu_link_item">
                   <div class="menu_link_item_top">
-                    <div>
+                    <a href="/menu" target="_blank">
+                      <div>
                         <p class="hero__list_item_quattro_logo_text">Pizza – Kebab</p>
-                      <!-- <img src="assets/mob/pizzalogo.svg" alt="hero-2" /> -->
-                    </div>
-                    <div class="hero__list_item_menu_link">
-                      <img src="assets/mob/menu.svg" alt="menu" />
-                      <h2 class="hero__list_item_menu_link_text">
-                        Zobrazit <br />nabídku
-                      </h2>
-                    </div>
+                        <!-- <img src="assets/mob/pizzalogo.svg" alt="hero-2" /> -->
+                      </div>
+                      <div class="hero__list_item_menu_link">
+                        <img src="assets/mob/menu.svg" alt="menu" />
+                        <h2 class="hero__list_item_menu_link_text">
+                          Zobrazit <br />nabídku
+                        </h2>
+                      </div>
+                    </a>
                   </div>
-                  <a href="/menu" class="hero__list_item_menu_link_text_bottom">
+                  <a href="/menu" target="_blank" class="hero__list_item_menu_link_text_bottom">
                     Klikněte zde
                   </a>
                 </li>
@@ -122,60 +145,84 @@
                 </li>
               </ul>
             </div>
+            <div class="grid hero__grid-desktop">
+              <div class="item item-pasta">
+                <img src="assets/desktop/pizzahero1.jpg" alt="Pasta dish">
+              </div>
+              <div class="item item-pizza">
+                <img src="assets/desktop/pizzahero2.jpg" alt="Pizza close-up">
+              </div>
+              <div class="item item-blue">
+                <a href="/menu" target="_blank" class="blue-content">
+                  <img src="assets/desktop/pizzahero3.jpg" alt="Blue block">
+                </a>
+              </div>
+              <div class="item item-salad">
+                <img src="assets/desktop/pizzahero4.jpg" alt="Salad bowl">
+              </div>
+              <div class="item item-building">
+                <img src="assets/desktop/pizzahero5.jpg" alt="Restaurant exterior">
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="contact contact_quattro">
         <div class="container">
-          <div class="contact__quattro">
-            <h2 class="contact__quattro_title">Pizza – Kebab</h2>
-            <div class="contact__quattro_description">
-                Vítejte v naší provozovně Pizza – Kebab!Spěcháte a chcete si pochutnat? U nás vždy najdete horkou pizzu a šťavnatý kebab, připravené rychle z čerstvých surovin právě pro vás! <br>
+          <div class="cont-wrapper">
+            <div class="first-section">
+              <div class="contact__quattro">
+                <h2 class="contact__quattro_title">Pizza – Kebab</h2>
+                <div class="contact__quattro_description">
+                  Vítejte v naší provozovně Pizza – Kebab!Spěcháte a chcete si pochutnat? U nás vždy najdete horkou pizzu a šťavnatý kebab, připravené rychle z čerstvých surovin právě pro vás! <br>
 
-               <br>Naše občerstvení je ideální pro ty, kdo jsou stále v pohybu. Vezměte si jídlo s sebou a vychutnejte si lahodné pokrmy kdekoliv.<br>
-                
-                <br>Těšíme se na vás každý den – chutně, rychle a pohodlně!
+                 <br>Naše občerstvení je ideální pro ty, kdo jsou stále v pohybu. Vezměte si jídlo s sebou a vychutnejte si lahodné pokrmy kdekoliv.<br>
+                  
+                  <br>Těšíme se na vás každý den – chutně, rychle a pohodlně!
+                </div>
+              </div>
+              <div class="contact__quattro_list">
+                <ul class="contact__quattro_list_items">
+                  <div>
+                    <li class="contact__quattro_list_item">
+                      <img
+                        src="assets/phone-icon.svg"
+                        alt="phone"
+                        class="contact__list_item_icon"
+                      />
+                      <a href="tel:+420777765570" class="contact__list_item_text"
+                        >777 765 570</a
+                      >
+                    </li>
+                  </div>
+                  <div class="adress">
+                    <li class="contact__list_item">
+                      <img
+                        src="assets/map-icon.svg"
+                        alt="map"
+                        class="contact__list_item_icon"
+                      />
+                      <a href="https://maps.app.goo.gl/QRXnoL947kqfEbfD8" target="_blank" class="contact__list_item_text"
+                        >Újezd 454/46, 118 00 Malá Strana</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="contact__quattro_list">
-            <ul class="contact__quattro_list_items">
-              <div>
-                <li class="contact__quattro_list_item">
-                  <img
-                    src="assets/phone-icon.svg"
-                    alt="phone"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="tel:+420777765570" class="contact__list_item_text"
-                    >777 765 570</a
-                  >
-                </li>
-              </div>
-              <div class="adress">
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/QRXnoL947kqfEbfD8" class="contact__list_item_text"
-                    >Újezd 454/46, 118 00 Malá Strana</a
-                  >
-                </li>
-              </div>
-            </ul>
-          </div>
-          <div class="tour">
-            <div class="tour__content">
-                <img src="assets/mob/comingsoon.jpg" alt="tour">
+            <div class="tour">
+              <div class="tour__content">
+                <img src="assets/mob/comingsoon.jpg" alt="tour" class="tour__mobile" />
+                <img src="assets/desktop/comingsoon.png" alt="tour" class="tour__desktop" />
                 <p>Coming soon</p>
+              </div>
             </div>
           </div>
           <div class="contact__quattro_map">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5120.234756273868!2d14.40438!3d50.0840892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e33f151b8f%3A0xe154becf9d727a5d!2sPizza%20-%20Kebab%20-%20Stromboli%20-%20Salat%20-%20Bistro!5e0!3m2!1scs!2scz!4v1749151746996!5m2!1scs!2scz"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5120.234756273868!2d14.40438!3d50.0840892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e33f151b8f%3A0xe154becf9d727a5d!2sPizza%20-%20Kebab%20-%20Stromboli%20-%20Salat%20-%20Bistro!5e0!3m2!1scs!2scz!4v1749151746996!5m2!1scs!2scz"
               width="100%"
-              height="345"
+              height="400"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -192,6 +239,12 @@
           <div class="footer__policy">
             <a href="#"
               >Zásady ochrany<br />
+              osobních údajů</a
+            >
+          </div>
+          <div class="footer__policy desktop">
+            <a href="#"
+              >Zásady ochrany
               osobních údajů</a
             >
           </div>

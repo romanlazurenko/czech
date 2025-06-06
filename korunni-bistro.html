@@ -21,6 +21,27 @@
             ><img src="assets/header-text.svg" alt="Bistro #1"
           /></a>
         </div>
+        <nav class="nav nav--desktop" aria-label="Hlavní navigace">
+          <ul class="nav__list">
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link nav__link--logo" href="/"
+                ><img src="assets/header-text.svg" alt="fork" class="header__fork"
+              /></a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/papa-s-pepper">Papa`s Pepper</a>
+            </li>
+            <li class="nav__list_item">
+              <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
+            </li>
+          </ul>
+        </nav>
         <div class="menu-btn">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -81,7 +102,7 @@
       </nav>
     </div>
     <main>
-      <section class="hero hero_quattro">
+      <section class="hero hero_korunni">
         <div class="container">
           <div class="hero__content">
             <div class="hero__header">
@@ -102,17 +123,19 @@
                 </li>
                 <li class="hero__list_item menu_link_item">
                   <div class="menu_link_item_top">
-                    <div class="hero__list_item_quattro_logo">
-                      <img src="assets/mob/korunnilogo.svg" alt="hero-2" />
-                    </div>
-                    <div class="hero__list_item_menu_link">
-                      <img src="assets/mob/menu.svg" alt="menu" />
-                      <h2 class="hero__list_item_menu_link_text">
-                        Zobrazit <br />nabídku
-                      </h2>
-                    </div>
+                    <a href="/menu" target="_blank">
+                      <div class="hero__list_item_quattro_logo">
+                        <img src="assets/mob/korunnilogo.svg" alt="hero-2" />
+                      </div>
+                      <div class="hero__list_item_menu_link">
+                        <img src="assets/mob/menu.svg" alt="menu" />
+                        <h2 class="hero__list_item_menu_link_text">
+                          Zobrazit <br />nabídku
+                        </h2>
+                      </div>
+                    </a>
                   </div>
-                  <a href="/menu" class="hero__list_item_menu_link_text_bottom">
+                  <a href="/menu" target="_blank" class="hero__list_item_menu_link_text_bottom">
                     Klikněte zde
                   </a>
                 </li>
@@ -121,66 +144,94 @@
                 </li>
               </ul>
             </div>
+            <div class="grid hero__grid-desktop">
+              <div class="item item-pasta">
+                <img src="assets/desktop/korunnihero1.jpg" alt="Pasta dish">
+              </div>
+              <div class="item item-pizza">
+                <img src="assets/desktop/korunnihero2.jpg" alt="Pizza close-up">
+              </div>
+              <div class="item item-blue">
+                <a href="/menu" target="_blank" class="blue-content">
+                  <img src="assets/desktop/korunnihero3.jpg" alt="Blue block">
+                </a>
+              </div>
+              <div class="item item-salad">
+                <img src="assets/desktop/korunnihero4.jpg" alt="Salad bowl">
+              </div>
+              <div class="item item-building">
+                <img src="assets/desktop/korunnihero5.jpg" alt="Restaurant exterior">
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="contact contact_quattro">
         <div class="container">
-          <div class="contact__quattro">
-            <h2 class="contact__quattro_title">Korunni Bistro</h2>
-            <div class="contact__quattro_description">
-              Vítejte v našem Korunni Bistru!<br>
+          <div class="cont-wrapper">
+            <div class="first-section">
+              <div class="contact__quattro">
+                <h2 class="contact__quattro_title">Korunni Bistro</h2>
+                <div class="contact__quattro_description">
+                  Vítejte v našem Korunni Bistru!<br>
 
-              <br>U nás je chutně, útulně jako doma a rychle! 
-              Připravujeme oblíbená jídla z čerstvých surovin, abyste pocítili teplo domácí kuchyně. <br>
-              
-              <br>Ideální místo, když chcete chutně svačit, vydatně obědvat nebo si jednoduše rychle doplnit energii během dne.<br>
-              
-              <br>Zastavte se – s radostí vás nakrmíme chutně a rychle jako doma!<br>
-              
-              <br>Čekáme na vás každý den s úsměvem a dobrou náladou!
+                  <br>U nás je chutně, útulně jako doma a rychle! 
+                  Připravujeme oblíbená jídla z čerstvých surovin, abyste pocítili teplo domácí kuchyně. <br>
+                  
+                  <br>Ideální místo, když chcete chutně svačit, vydatně obědvat nebo si jednoduše rychle doplnit energii během dne.<br>
+                  
+                  <br>Zastavte se – s radostí vás nakrmíme chutně a rychle jako doma!<br>
+                  
+                  <br>Čekáme na vás každý den s úsměvem a dobrou náladou!
+                </div>
+              </div>
+              <div class="contact__quattro_list">
+                <ul class="contact__quattro_list_items">
+                  <div>
+                    <li class="contact__quattro_list_item">
+                      <img
+                        src="assets/phone-icon.svg"
+                        alt="phone"
+                        class="contact__list_item_icon"
+                      />
+                      <a href="tel:+420608835002" class="contact__list_item_text"
+                        >608 835 002</a
+                      >
+                    </li>
+                  </div>
+                  <div class="adress">
+                    <li class="contact__list_item">
+                      <img
+                        src="assets/map-icon.svg"
+                        alt="map"
+                        class="contact__list_item_icon"
+                      />
+                      <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" target="_blank" class="contact__list_item_text korunni-adress-mobile"
+                        >Korunní 1011/103,<br>
+                        101 00 Vinohrady</a
+                      >
+                      <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" target="_blank" class="contact__list_item_text korunni-adress-desktop"
+                      >Korunní 1011/103,
+                      101 00 Vinohrady</a
+                    >
+                    </li>
+                  </div>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="contact__quattro_list">
-            <ul class="contact__quattro_list_items">
-              <div>
-                <li class="contact__quattro_list_item">
-                  <img
-                    src="assets/phone-icon.svg"
-                    alt="phone"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="tel:+420608835002" class="contact__list_item_text"
-                    >608 835 002</a
-                  >
-                </li>
-              </div>
-              <div class="adress">
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" class="contact__list_item_text"
-                    >Korunní 1011/103,<br>
-                    101 00 Vinohrady</a
-                  >
-                </li>
-              </div>
-            </ul>
-          </div>
-          <div class="tour">
-            <div class="tour__content">
-                <img src="assets/mob/comingsoon.jpg" alt="tour">
+            <div class="tour">
+              <div class="tour__content">
+                <img src="assets/mob/comingsoon.jpg" alt="tour" class="tour__mobile" />
+                <img src="assets/desktop/comingsoon.png" alt="tour" class="tour__desktop" />
                 <p>Coming soon</p>
+              </div>
             </div>
           </div>
           <div class="contact__quattro_map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9561.035748234804!2d14.455849816688048!3d50.076182509840585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93004aae91f3%3A0x25928b24c44883ee!2sKorunn%C3%AD%20Bistro!5e0!3m2!1scs!2scz!4v1749210204500!5m2!1scs!2scz"
               width="100%"
-              height="345"
+              height="400"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -197,6 +248,12 @@
           <div class="footer__policy">
             <a href="#"
               >Zásady ochrany<br />
+              osobních údajů</a
+            >
+          </div>
+          <div class="footer__policy desktop">
+            <a href="#"
+              >Zásady ochrany
               osobních údajů</a
             >
           </div>

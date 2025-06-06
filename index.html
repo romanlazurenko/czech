@@ -19,6 +19,15 @@
         <div class="header-text">
           <img src="assets/header-text.svg" alt="Bistro #1" />
         </div>
+        <nav class="nav nav--desktop" aria-label="Hlavní navigace">
+          <ul class="nav__list">
+            <li class="nav__list_item"><a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a></li>
+            <li class="nav__list_item"><a class="nav__link nav__link--logo" href="/"><img src="assets/header-text.svg" alt="fork" class="header__fork"></a></li>
+            <li class="nav__list_item"><a class="nav__link" href="/czech/papa-s-pepper">Papa`s Pepper</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a></li>
+          </ul>
+        </nav>
         <div class="menu-btn">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -118,83 +127,115 @@
                 vždy u nás najdete něco podle nálady.
               </p>
             </div>
+            <ul class="hero__list_items-desktop">
+              <li class="hero__list_item">
+                <a href="/czech/quattro-gusti" class="hero__list_item_link">
+                  <img src="assets/desktop/hero1.png" alt="hero-1" />
+                  <p class="hero__list_item_text">Quattro Gusti</p>
+                </a>
+              </li>
+              <li class="hero__list_item">
+               <a href="/czech/korunni-bistro" class="hero__list_item_link">
+                <img src="assets/desktop/hero2.png" alt="hero-2" />
+                <p class="hero__list_item_text">Korunni Bistro</p>
+               </a>
+              </li>
+           
+              <li class="hero__list_item">
+                <a href="/czech/papa-s-pepper" class="hero__list_item_link">
+                  <img src="assets/desktop/hero3.png" alt="hero-3" />
+                  <p class="hero__list_item_text">Papa`s Pepper</p>
+                </a>
+              </li>
+              <li class="hero__list_item">
+                <a href="/czech/pizza-kebab" class="hero__list_item_link">
+                  <img src="assets/desktop/hero4.png" alt="hero-4" />
+                  <p class="hero__list_item_text">Pizza – Kebab</p>
+                </a>
+              </li>
+            </ul>
+            <img src="assets/fork.svg" alt="fork" class="hero__fork-desktop" />
           </div>
         </div>
       </section>
       <section class="contact">
         <div class="container">
-          <div class="contact__content">
-            <h2 class="contact__title">Kontakty</h2>
-          </div>
-          <div class="contact__list">
-            <ul class="contact__list_items">
-              <div class="phone">
-                <li class="contact__list_item">
-                  <img
-                    src="assets/phone-icon.svg"
-                    alt="phone"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="tel:+420777123456" class="contact__list_item_text"
-                    >777 765 570</a
-                  >
-                </li>
-              </div>
-              <div class="adress">
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/GYqR827i5GwVnPWy8" class="contact__list_item_text"
-                    >17, Francouzská 736, Vinohrady, 120 00 Praha 2</a
-                  >
-                </li>
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" class="contact__list_item_text"
-                    >Korunní 1011/130 00, 130 00 Vinohrady</a
-                  >
-                </li>
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" class="contact__list_item_text"
-                    >Korunní 1011/103, 101 00 Vinohrady</a
-                  >
-                </li>
-                <li class="contact__list_item">
-                  <img
-                    src="assets/map-icon.svg"
-                    alt="map"
-                    class="contact__list_item_icon"
-                  />
-                  <a href="https://maps.app.goo.gl/QRXnoL947kqfEbfD8" class="contact__list_item_text"
-                    >Újezd 454/46, 118 00 Malá Strana</a
-                  >
-                </li>
-              </div>
-            </ul>
-          </div>
-          <div class="contact__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5120.234756273868!2d14.40438!3d50.0840892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e33f151b8f%3A0xe154becf9d727a5d!2sPizza%20-%20Kebab%20-%20Stromboli%20-%20Salat%20-%20Bistro!5e0!3m2!1scs!2scz!4v1749151746996!5m2!1scs!2scz"
-              width="100%"
-              height="345"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+          <div class="contact-wrapper">
+           <div class="left-items">
+            <div class="contact__content">
+              <h2 class="contact__title">Kontakty</h2>
+            </div>
+            <div class="contact__list">
+              <ul class="contact__list_items">
+                <div class="phone">
+                  <li class="contact__list_item">
+                    <img
+                      src="assets/phone-icon.svg"
+                      alt="phone"
+                      class="contact__list_item_icon"
+                    />
+                    <a href="tel:+420777123456" class="contact__list_item_text"
+                      >777 765 570</a
+                    >
+                  </li>
+                </div>
+                <div class="adress">
+                  <li class="contact__list_item">
+                    <img
+                      src="assets/map-icon.svg"
+                      alt="map"
+                      class="contact__list_item_icon"
+                    />
+                    <a href="https://maps.app.goo.gl/GYqR827i5GwVnPWy8" target="_blank" class="contact__list_item_text"
+                      >17, Francouzská 736, Vinohrady, 120 00 Praha 2</a
+                    >
+                  </li>
+                  <li class="contact__list_item">
+                    <img
+                      src="assets/map-icon.svg"
+                      alt="map"
+                      class="contact__list_item_icon"
+                    />
+                    <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" target="_blank" class="contact__list_item_text"
+                      >Korunní 1011/130 00, 130 00 Vinohrady</a
+                    >
+                  </li>
+                  <li class="contact__list_item">
+                    <img
+                      src="assets/map-icon.svg"
+                      alt="map"
+                      class="contact__list_item_icon"
+                    />
+                    <a href="https://maps.app.goo.gl/2tyJrw2nT9ht9WADA" target="_blank" class="contact__list_item_text"
+                      >Korunní 1011/103, 101 00 Vinohrady</a
+                    >
+                  </li>
+                  <li class="contact__list_item">
+                    <img
+                      src="assets/map-icon.svg"
+                      alt="map"
+                      class="contact__list_item_icon"
+                    />
+                    <a href="https://maps.app.goo.gl/QRXnoL947kqfEbfD8" target="_blank" class="contact__list_item_text"
+                      >Újezd 454/46, 118 00 Malá Strana</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+           </div>
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5120.234756273868!2d14.40438!3d50.0840892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e33f151b8f%3A0xe154becf9d727a5d!2sPizza%20-%20Kebab%20-%20Stromboli%20-%20Salat%20-%20Bistro!5e0!3m2!1scs!2scz!4v1749151746996!5m2!1scs!2scz"
+                width="100%"
+                height="480"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -205,6 +246,12 @@
           <div class="footer__policy">
             <a href="#"
               >Zásady ochrany<br />
+              osobních údajů</a
+            >
+          </div>
+          <div class="footer__policy desktop">
+            <a href="#"
+              >Zásady ochrany
               osobních údajů</a
             >
           </div>
