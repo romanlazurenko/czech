@@ -175,8 +175,10 @@ h3 {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   z-index: 100;
   display: flex;
-  justify-content: center;
-  padding-bottom: 32px;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 32px 0;
 }
 
 .header__nav.active {
@@ -185,11 +187,12 @@ h3 {
 
 .nav {
   width: 100%;
-  margin-top: 126px;
+  margin-top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 0 32px;
 }
 
 .nav__list {
@@ -199,7 +202,8 @@ h3 {
   flex-direction: column;
   gap: 2.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .nav__link {
@@ -212,7 +216,7 @@ h3 {
   padding: 0.5em 1.5em;
   border-radius: 100px;
   outline: none;
-  margin-top: 126px;
+  margin-top: 0;
   border: 2px solid transparent;
 }
 .first-section {
@@ -1158,8 +1162,11 @@ h3 {
     font-weight: 400;
     text-align: left;
   }
-  .contact__quattro_map iframe {
+  .contact__quattro_map {
     height: 440px;
+  }
+  .contact__quattro_map iframe {
+    height: 100%;
   }
   .hero_korunni{
     background-image: url(assets/desktop/korunnibg.png);
