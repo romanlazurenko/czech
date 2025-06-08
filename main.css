@@ -164,7 +164,7 @@ h3 {
 }
 .burger-phone-content .footer__policy {
   padding: 0;
-  margin: 60px auto;
+  margin: 32px auto;
 }
 .tour__content iframe {
   width: 100%;
@@ -299,7 +299,7 @@ h3 {
   margin-top: 38px;
 } 
 .nav__list_item:not(:last-child) {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 }
 
 .burger-phone .contact__list_item_icon {
