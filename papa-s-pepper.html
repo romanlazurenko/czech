@@ -1,56 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bistro №1 | Papa`s Pepper</title>
-    <link rel="stylesheet" href="main.css" />
-    <script defer src="main.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header__container">
-        <div class="header-text">
-          <a href="/" class="header-text__link"
-            ><img src="assets/header-text.svg" alt="Bistro #1"
-          /></a>
-        </div>
-        <nav class="nav nav--desktop" aria-label="Hlavní navigace">
-          <ul class="nav__list">
-            <li class="nav__list_item">
-              <a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a>
-            </li>
-            <li class="nav__list_item">
-              <a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a>
-            </li>
-            <li class="nav__list_item">
-              <a class="nav__link nav__link--logo" href="/"
-                ><img src="assets/header-text.svg" alt="fork" class="header__fork"
-              /></a>
-            </li>
-            <li class="nav__list_item">
-              <a class="nav__link" href="/czech/papa-s-pepper">Papa`s Pepper</a>
-            </li>
-            <li class="nav__list_item">
-              <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu-btn">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+    rel="stylesheet" />
+  <title>Bistro №1 | Papa`s Pepper</title>
+  <link rel="stylesheet" href="main.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header-text">
+        <a href="/" class="header-text__link"><img src="assets/header-text.svg" alt="Bistro #1" /></a>
       </div>
-    </header>
-    <div class="header__nav" aria-hidden="true">
-      <nav class="nav" aria-label="Hlavní navigace">
+      <nav class="nav nav--desktop" aria-label="Hlavní navigace">
         <ul class="nav__list">
           <li class="nav__list_item">
             <a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a>
@@ -59,71 +29,85 @@
             <a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a>
           </li>
           <li class="nav__list_item">
-            <a class="nav__link" href="/czech/papa-s-pepper">Papa`s Pepper</a>
+            <a class="nav__link nav__link--logo" href="/"><img src="assets/header-text.svg" alt="fork"
+                class="header__fork" /></a>
+          </li>
+          <li class="nav__list_item">
+            <a class="nav__link active-page" href="/czech/papa-s-pepper">Papa`s Pepper</a>
           </li>
           <li class="nav__list_item">
             <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
           </li>
         </ul>
-        <div>
-          <div class="burger-phone">
-            <li class="contact__list_item">
-              <svg
-                class="contact__list_item_icon"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20.0693 27.5105C18.1493 27.4398 12.7079 26.6878 7.00925 20.9905C1.31192 15.2918 0.561252 9.8518 0.489252 7.93047C0.382585 5.00247 2.62525 2.15847 5.21592 1.0478C5.52789 0.913088 5.86952 0.8618 6.20729 0.898966C6.54506 0.936133 6.86737 1.06048 7.14259 1.2598C9.27592 2.81447 10.7479 5.16647 12.0119 7.0158C12.29 7.42211 12.4089 7.91653 12.346 8.40486C12.283 8.89319 12.0426 9.3413 11.6706 9.6638L9.06925 11.5958C8.94357 11.6866 8.85511 11.8198 8.82029 11.9709C8.78547 12.122 8.80665 12.2805 8.87992 12.4171C9.46925 13.4878 10.5173 15.0825 11.7173 16.2825C12.9173 17.4825 14.5879 18.5998 15.7333 19.2558C15.8769 19.3364 16.0459 19.3589 16.2056 19.3188C16.3653 19.2786 16.5035 19.1788 16.5919 19.0398L18.2853 16.4625C18.5966 16.0489 19.0558 15.7719 19.5668 15.6894C20.0778 15.6069 20.6009 15.7253 21.0266 16.0198C22.9026 17.3185 25.0919 18.7651 26.6946 20.8171C26.9101 21.0943 27.0472 21.4243 27.0915 21.7727C27.1358 22.121 27.0858 22.4748 26.9466 22.7971C25.8306 25.4011 23.0066 27.6185 20.0693 27.5105Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <a href="tel:+420777411976" class="contact__list_item_text"
-                >777 411 976</a
-              >
-            </li>
-          </div>
-          <div class="footer__content">
-            <div class="footer__policy">
-              <a href="#"
-                >Zásady ochrany<br />
-                osobních údajů</a
-              >
-            </div>
+      </nav>
+      <div class="menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+  <div class="header__nav" aria-hidden="true">
+    <nav class="nav" aria-label="Hlavní navigace">
+      <ul class="nav__list">
+        <li class="nav__list_item">
+          <a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a>
+        </li>
+        <li class="nav__list_item">
+          <a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a>
+        </li>
+        <li class="nav__list_item">
+          <a class="nav__link active-page" href="/czech/papa-s-pepper">Papa`s Pepper</a>
+        </li>
+        <li class="nav__list_item">
+          <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
+        </li>
+      </ul>
+      <div class="burger-phone-content">
+        <div class="burger-phone">
+          <li class="contact__list_item">
+            <svg class="contact__list_item_icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20.0693 27.5105C18.1493 27.4398 12.7079 26.6878 7.00925 20.9905C1.31192 15.2918 0.561252 9.8518 0.489252 7.93047C0.382585 5.00247 2.62525 2.15847 5.21592 1.0478C5.52789 0.913088 5.86952 0.8618 6.20729 0.898966C6.54506 0.936133 6.86737 1.06048 7.14259 1.2598C9.27592 2.81447 10.7479 5.16647 12.0119 7.0158C12.29 7.42211 12.4089 7.91653 12.346 8.40486C12.283 8.89319 12.0426 9.3413 11.6706 9.6638L9.06925 11.5958C8.94357 11.6866 8.85511 11.8198 8.82029 11.9709C8.78547 12.122 8.80665 12.2805 8.87992 12.4171C9.46925 13.4878 10.5173 15.0825 11.7173 16.2825C12.9173 17.4825 14.5879 18.5998 15.7333 19.2558C15.8769 19.3364 16.0459 19.3589 16.2056 19.3188C16.3653 19.2786 16.5035 19.1788 16.5919 19.0398L18.2853 16.4625C18.5966 16.0489 19.0558 15.7719 19.5668 15.6894C20.0778 15.6069 20.6009 15.7253 21.0266 16.0198C22.9026 17.3185 25.0919 18.7651 26.6946 20.8171C26.9101 21.0943 27.0472 21.4243 27.0915 21.7727C27.1358 22.121 27.0858 22.4748 26.9466 22.7971C25.8306 25.4011 23.0066 27.6185 20.0693 27.5105Z"
+                fill="currentColor" />
+            </svg>
+            <a href="tel:+420777411976" class="contact__list_item_text">777 411 976</a>
+          </li>
+        </div>
+        <div class="footer__content">
+          <div class="footer__policy">
+            <a href="#">Zásady ochrany<br />
+              osobních údajů</a>
           </div>
         </div>
-      </nav>
-    </div>
-    <main>
-      <section class="hero hero_papa">
-        <div class="container">
-          <div class="hero__content">
-            <div class="hero__header">
-              <h1 class="hero__title">Papa`s Pepper</h1>
-            </div>
-            <div class="hero__list">
-              <ul class="hero__list_items">
-                <li class="hero__list_item_first">
-                  <div class="hero__list_item_first_img">
-                    <img src="assets/mob/papahero1.jpg" alt="hero-1" />
-                  </div>
-                  <div class="hero__list_item_second_img">
-                    <img src="assets/mob/papahero2.jpg" alt="hero-1" />
-                  </div>
-                </li>
-                <li class="hero__list_item">
-                  <img src="assets/mob/papahero3.jpg" alt="hero-2" />
-                </li>
-                <a href="/menu" target="_blank"><li class="hero__list_item menu_link_item">
+      </div>
+    </nav>
+  </div>
+  <main>
+    <section class="hero hero_papa">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__header">
+            <h1 class="hero__title">Papa`s Pepper</h1>
+          </div>
+          <div class="hero__list">
+            <ul class="hero__list_items">
+              <li class="hero__list_item_first">
+                <div class="hero__list_item_first_img">
+                  <img src="assets/mob/papahero1.jpg" alt="hero-1" />
+                </div>
+                <div class="hero__list_item_second_img">
+                  <img src="assets/mob/papahero2.jpg" alt="hero-1" />
+                </div>
+              </li>
+              <li class="hero__list_item">
+                <img src="assets/mob/papahero3.jpg" alt="hero-2" />
+              </li>
+              <a href="/menu" target="_blank">
+                <li class="hero__list_item menu_link_item">
                   <div class="menu_link_item_top">
-                    <div> 
+                    <div>
                       <div class="hero__list_item_quattro_logo">
                         <img src="assets/mob/papalogo.svg" alt="hero-2" />
                       </div>
@@ -138,124 +122,107 @@
                   <p class="hero__list_item_menu_link_text_bottom">
                     Klikněte zde
                   </p>
-                </li></a>
-                <li class="hero__list_item">
-                  <img src="assets/mob/papahero4.jpg" alt="hero-2" />
                 </li>
-              </ul>
-            </div>
-            <div class="grid hero__grid-desktop">
-              <div class="item item-pasta">
-                <img src="assets/desktop/papahero1.jpg" alt="Pasta dish">
-              </div>
-              <div class="item item-pizza">
-                <img src="assets/desktop/papahero2.jpg" alt="Pizza close-up">
-              </div>
-              <div class="item item-blue">
-                <a href="/menu" target="_blank" class="blue-content">
-                  <img src="assets/desktop/papahero3.jpg" alt="Blue block">
-                </a>
-              </div>
-              <div class="item item-salad">
-                <img src="assets/desktop/papahero4.jpg" alt="Salad bowl">
-              </div>
-              <div class="item item-building">
-                <img src="assets/desktop/papahero5.jpg" alt="Restaurant exterior">
-              </div>
-            </div>
+              </a>
+              <li class="hero__list_item">
+                <img src="assets/mob/papahero4.jpg" alt="hero-2" />
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section class="contact contact_quattro">
-        <div class="container">
-          <div class="cont-wrapper">
-            <div class="first-section">
-              <div class="contact__quattro">
-                <h2 class="contact__quattro_title">Papa`s Pepper</h2>
-                <div class="contact__quattro_description">
-                  Vítejte v naší pizzerii Papa`s Pepper!<br>
-
-                   <br> U nás na vás vždy čeká výborná pizza, připravená podle tradičních i originálních receptur z čerstvých surovin. Naše útulná restaurace je ideální pro rodinný oběd, setkání s přáteli nebo rychlé občerstvení kdykoli během dne.<br>
-                    
-                    <br> Přijďte a přesvědčte se sami – u nás je chutně a příjemně!<br>
-                    
-                    <br> Těšíme se na vás každý den s dobrou náladou!
-                </div>
-              </div>
-              <div class="contact__quattro_list">
-                <ul class="contact__quattro_list_items">
-                  <div>
-                    <li class="contact__quattro_list_item">
-                      <img
-                        src="assets/phone-icon.svg"
-                        alt="phone"
-                        class="contact__list_item_icon"
-                      />
-                      <a href="tel:+420777411976" class="contact__list_item_text"
-                        >777 411 976</a
-                      >
-                    </li>
-                  </div>
-                  <div class="adress">
-                    <li class="contact__list_item">
-                      <img
-                        src="assets/map-icon.svg"
-                        alt="map"
-                        class="contact__list_item_icon"
-                      />
-                      <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" target="_blank" class="contact__list_item_text korunni-adress-mobile"
-                        >Korunní 1011/130 00,<br>
-                        130 00 Vinohrady</a
-                      >
-                      <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" target="_blank" class="contact__list_item_text korunni-adress-desktop"
-                        >Korunní 1011/130 00,
-                        130 00 Vinohrady</a
-                      >
-                    </li>
-                  </div>
-                </ul>
-              </div>
+          <div class="grid hero__grid-desktop">
+            <div class="item item-pasta">
+              <img src="assets/desktop/papahero1.jpg" alt="Pasta dish">
             </div>
-            <div class="tour">
-              <div class="tour__content">
-                <img src="assets/mob/comingsoon.jpg" alt="tour" class="tour__mobile" />
-                <img src="assets/desktop/comingsoon.png" alt="tour" class="tour__desktop" />
-                <p>Coming soon</p>
-              </div>
+            <div class="item item-pizza">
+              <img src="assets/desktop/papahero2.jpg" alt="Pizza close-up">
             </div>
-          </div>
-          <div class="contact__quattro_map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12409.294285619111!2d14.458144332140522!3d50.07940646112402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b955f40982ed9%3A0xfb9db6f38047e863!2sPapa&#39;s%20Pepper!5e0!3m2!1scs!2scz!4v1749209112851!5m2!1scs!2scz"
-              width="100%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__content">
-          <div class="footer__policy">
-            <a href="#"
-              >Zásady ochrany<br />
-              osobních údajů</a
-            >
-          </div>
-          <div class="footer__policy desktop">
-            <a href="#"
-              >Zásady ochrany
-              osobních údajů</a
-            >
+            <div class="item item-blue">
+              <a href="/menu" target="_blank" class="blue-content">
+                <img src="assets/desktop/papahero3.jpg" alt="Blue block">
+              </a>
+            </div>
+            <div class="item item-salad">
+              <img src="assets/desktop/papahero4.jpg" alt="Salad bowl">
+            </div>
+            <div class="item item-building">
+              <img src="assets/desktop/papahero5.jpg" alt="Restaurant exterior">
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="contact contact_quattro">
+      <div class="container">
+        <div class="cont-wrapper">
+          <div class="first-section">
+            <div class="contact__quattro">
+              <h2 class="contact__quattro_title">Papa`s Pepper</h2>
+              <div class="contact__quattro_description">
+                Vítejte v naší pizzerii Papa`s Pepper!<br>
+
+                <br> U nás na vás vždy čeká výborná pizza, připravená podle tradičních i originálních receptur z
+                čerstvých surovin. Naše útulná restaurace je ideální pro rodinný oběd, setkání s přáteli nebo rychlé
+                občerstvení kdykoli během dne.<br>
+
+                <br> Přijďte a přesvědčte se sami – u nás je chutně a příjemně!<br>
+
+                <br> Těšíme se na vás každý den s dobrou náladou!
+              </div>
+            </div>
+            <div class="contact__quattro_list">
+              <ul class="contact__quattro_list_items">
+                <div>
+                  <li class="contact__quattro_list_item">
+                    <img src="assets/phone-icon.svg" alt="phone" class="contact__list_item_icon" />
+                    <a href="tel:+420777411976" class="contact__list_item_text">777 411 976</a>
+                  </li>
+                </div>
+                <div class="adress">
+                  <li class="contact__list_item">
+                    <img src="assets/map-icon.svg" alt="map" class="contact__list_item_icon" />
+                    <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" target="_blank"
+                      class="contact__list_item_text korunni-adress-mobile">Korunní 1011/130 00,<br>
+                      130 00 Vinohrady</a>
+                    <a href="https://maps.app.goo.gl/Jbotx7HtedGMDvFU8" target="_blank"
+                      class="contact__list_item_text korunni-adress-desktop">Korunní 1011/130 00,
+                      130 00 Vinohrady</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="tour">
+            <div class="tour__content">
+                <img src="assets/mob/comingsoon.jpg" alt="tour" class="tour__mobile" />
+                <img src="assets/desktop/comingsoon.png" alt="tour" class="tour__desktop" />
+                <p>Coming soon</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__quattro_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12409.294285619111!2d14.458144332140522!3d50.07940646112402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b955f40982ed9%3A0xfb9db6f38047e863!2sPapa&#39;s%20Pepper!5e0!3m2!1scs!2scz!4v1749209112851!5m2!1scs!2scz"
+            width="100%" height="472" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__policy">
+          <a href="#">Zásady ochrany<br />
+            osobních údajů</a>
+        </div>
+        <div class="footer__policy desktop">
+          <a href="#">Zásady ochrany
+            osobních údajů</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

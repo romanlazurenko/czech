@@ -22,7 +22,7 @@
       </div>
       <nav class="nav nav--desktop" aria-label="Hlavní navigace">
         <ul class="nav__list">
-          <li class="nav__list_item"><a class="nav__link" href="/czech/quattro-gusti">Quattro Gusti</a></li>
+          <li class="nav__list_item"><a class="nav__link active-page" href="/czech/quattro-gusti">Quattro Gusti</a></li>
           <li class="nav__list_item"><a class="nav__link" href="/czech/korunni-bistro">Korunni Bistro</a></li>
           <li class="nav__list_item"><a class="nav__link nav__link--logo" href="/"><img src="assets/header-text.svg"
                 alt="fork" class="header__fork"></a></li>
@@ -53,7 +53,7 @@
           <a class="nav__link" href="/czech/pizza-kebab">Pizza – Kebab</a>
         </li>
       </ul>
-      <div>
+      <div class="burger-phone-content">
         <div class="burger-phone">
           <li class="contact__list_item">
             <svg class="contact__list_item_icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
@@ -94,24 +94,26 @@
               <li class="hero__list_item">
                 <img src="assets/mob/quattrohero3.jpg" alt="hero-2" />
               </li>
-              <a href="/czech/menu/quattro.pdf" target="_blank"><li class="hero__list_item menu_link_item">
-                <div class="menu_link_item_top">
-                  <div> 
-                    <div class="hero__list_item_quattro_logo">
-                      <img src="assets/mob/quattrologo.svg" alt="hero-2" />
+              <a href="/czech/menu/quattro.pdf" target="_blank">
+                <li class="hero__list_item menu_link_item">
+                  <div class="menu_link_item_top">
+                    <div>
+                      <div class="hero__list_item_quattro_logo">
+                        <img src="assets/mob/quattrologo.svg" alt="hero-2" />
+                      </div>
+                      <div class="hero__list_item_menu_link">
+                        <img src="assets/mob/menu.svg" alt="menu" />
+                        <h2 class="hero__list_item_menu_link_text">
+                          Zobrazit <br />nabídku
+                        </h2>
+                      </div>
                     </div>
-                    <div class="hero__list_item_menu_link">
-                      <img src="assets/mob/menu.svg" alt="menu" />
-                      <h2 class="hero__list_item_menu_link_text">
-                        Zobrazit <br />nabídku
-                      </h2>
-                    </div>
-                    </div>
-                </div>
-                <p class="hero__list_item_menu_link_text_bottom">
-                  Klikněte zde
-                </p>
-              </li></a>
+                  </div>
+                  <p class="hero__list_item_menu_link_text_bottom">
+                    Klikněte zde
+                  </p>
+                </li>
+              </a>
               <li class="hero__list_item">
                 <img src="assets/mob/quattrohero4.jpg" alt="hero-2" />
               </li>
@@ -167,7 +169,8 @@
                 <div class="adress">
                   <li class="contact__list_item">
                     <img src="assets/map-icon.svg" alt="map" class="contact__list_item_icon" />
-                    <a href="https://maps.app.goo.gl/GYqR827i5GwVnPWy8" target="_blank" class="contact__list_item_text">17, Francouzská 736, Vinohrady, 120 00 Praha 2</a>
+                    <a href="https://maps.app.goo.gl/GYqR827i5GwVnPWy8" target="_blank"
+                      class="contact__list_item_text">17, Francouzská 736, Vinohrady, 120 00 Praha 2</a>
                   </li>
                 </div>
               </ul>
@@ -175,9 +178,10 @@
           </div>
           <div class="tour">
             <div class="tour__content">
-              <img src="assets/mob/comingsoon.jpg" alt="tour" class="tour__mobile" />
-              <img src="assets/desktop/comingsoon.png" alt="tour" class="tour__desktop" />
-              <p>Coming soon</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1749398496579!6m8!1m7!1sCAoSHENJQUJJaENrYTVrcGpNSjNScnVMY1pvamUwNTQ.!2m2!1d50.07381131369997!2d14.44034076586186!3f354.8792933101041!4f0.8132902427444151!5f0.7820865974627469"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -195,16 +199,12 @@
     <div class="container">
       <div class="footer__content">
         <div class="footer__policy">
-          <a href="#"
-            >Zásady ochrany<br />
-            osobních údajů</a
-          >
+          <a href="#">Zásady ochrany<br />
+            osobních údajů</a>
         </div>
         <div class="footer__policy desktop">
-          <a href="#"
-            >Zásady ochrany
-            osobních údajů</a
-          >
+          <a href="#">Zásady ochrany
+            osobních údajů</a>
         </div>
       </div>
     </div>
