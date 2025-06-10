@@ -1378,7 +1378,7 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 98px);
+  min-height: calc(100vh - 282px);
 }
 
 .policy__content {
