@@ -1371,3 +1371,66 @@ h3 {
   z-index: 2;
   pointer-events: none;
 }
+
+.policy {
+  padding: 32px;
+  background-image: url(assets/mob/contactsbg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 98px);
+}
+
+.policy__content {
+  background-color: #181e5b;
+  padding: 32px;
+  border-radius: 30px;
+  margin-top: 32px;
+}
+
+.policy__title {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.policy__text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.policy__text p {
+  margin-bottom: 16px;
+}
+
+.policy__text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1170px) {
+  .policy {
+    background-image: url(assets/desktop/contactbg.png);
+    padding: 0;
+    margin: 90px auto 0;
+    padding-bottom: 90px;
+  }
+
+  .policy__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .policy__title {
+    font-size: 50px;
+  }
+
+  .policy__text {
+    font-size: 18px;
+  }
+}
